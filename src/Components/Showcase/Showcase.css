@@ -1,0 +1,77 @@
+.showcase {
+height: 400px;
+background-color: #047aed;
+color: #fff;
+position: relative;
+}
+.showcase a {
+    color: #047aed;
+}
+p {
+    margin: 20px 0px;
+}
+.showcase .grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 30px;
+}
+.showcase-form{
+    position: relative;
+    top: 60px;
+    height: 360px;
+    width: 400px;
+    padding: 40px;
+    z-index: 10;
+    justify-self: flex-end;
+}
+
+.showcase-form .form-control {
+    margin:20px 0;
+}
+/* .showcase::before {
+    content: "";
+    position: absolute;
+    color: #008000;
+    height: 40px;
+    bottom: 325px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(-3deg);
+} */
+
+.showcase::after {
+    content: "";
+    position: absolute;
+    color: red;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(-3deg);
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='password'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase-form input:focus{
+    outline: none;
+}
+
+@media screen and (max-width:1121px){
+.showcase .grid {
+    display:grid;
+    grid-template-columns:1fr;
+}
+.showcase-form.card {
+    justify-self:center;
+}
+
+}
