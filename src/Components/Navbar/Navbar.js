@@ -15,7 +15,7 @@ window.addEventListener('resize',()=>{
 return (
 
                 <nav className='nav'>
-                  <h1 className='logo'>Logo</h1>
+                  <h1 className='logo'>Logo!</h1>
                   <div className='menu-icon'>
                   <i className={clicked ? 'fas fa-times' : 'fas fa-bars'} onClick={handleClick}></i>
                   </div>
