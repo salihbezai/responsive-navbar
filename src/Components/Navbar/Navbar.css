@@ -58,7 +58,7 @@
         transition: left 1s;
         flex-direction: column;
         align-items:center;
-        background-color: blue;
+        background-color: #000000ba;
         z-index:20;
     }
 
